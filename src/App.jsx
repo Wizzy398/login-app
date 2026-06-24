@@ -22,7 +22,7 @@ function App() {
 const url = isLogin
     ? "https://auth-backend-oc24.onrender.com/login"
     : "https://auth-backend-oc24.onrender.com/register";
-    
+
   try {
     const response = await fetch(url, {
       method: "POST",
@@ -109,6 +109,15 @@ const url = isLogin
 >
   Switch to {isLogin ? "Register" : "Login"}
 </button>
+
+<br /><br />
+
+<button
+  onClick={() => window.location.href = "/admin"}
+>
+  Admin Dashboard
+</button>
+
     </div>
   );
 }
