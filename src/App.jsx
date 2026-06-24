@@ -112,11 +112,7 @@ const url = isLogin
 
 <br /><br />
 
-<button
-  onClick={() => window.location.href = "/admin"}
->
-  Admin Dashboard
-</button>
+
 
     </div>
   );
